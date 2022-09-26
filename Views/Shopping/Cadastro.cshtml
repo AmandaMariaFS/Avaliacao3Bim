@@ -1,0 +1,30 @@
+@{
+    ViewData["Title"] = "Cadastrar Loja";
+}
+
+<h1>Cadastrar Loja</h1>
+
+<form action="/Shopping/CadastroResposta" method="post">
+    <label for="id">Id: </label>
+    <input type="number" name="id" id="id"> <br>
+
+    <label for="name">Nome:</label>
+    <input type="text" name="name" id="name"> <br>
+
+    <label for="piso">Piso: </label>
+    <input type="text" name="piso" id="piso"> <br>
+
+    <label for="desc">Descrição:</label>
+    <input type="text" name="desc" id="desc"> <br>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email"> <br>
+
+    <label for="tipo">Tipo: </label>
+    <select name="tipo" id="tipo">
+        <option value="Kiosque">Kiosque</option>
+        <option value="Loja">Loja</option>
+    </select> <br>
+
+    <input type="submit" value="Cadastrar">
+</form>
